@@ -1,0 +1,7 @@
+Our plan for the next few weeks:
+10/14 - begin reading in tables, set up GitHub repository
+10/ 21 - complete reading in tables, continue cleaning data
+10/28 - continue cleaning / tidying data
+11/4 - complete cleaning / tidying data, begin EDA
+Update, w/o 10/10:
+This week, we began the process of reading in tables to the PostgreSQL server. At the moment, we have somewhat successfully loaded most tables (deptinfo, skuinfo, sksinfo, and strinfo). We ran into some issues with the SKU table, due to some rows/products having two colors separated by a comma. This resulted in an extra column in those rows when delimiting with commas, but we were able to overcome this by first excluding those rows. In the future, we might fix those rows (by removing the comma and space separating each of the two colors, ex: “red, blue” becomes “redblue”) and then appending them to the current tables. We expect to finish reading in that last transactions (trnsact) table in the next few days.
