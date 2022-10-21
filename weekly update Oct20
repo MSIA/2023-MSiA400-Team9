@@ -1,0 +1,12 @@
+Our plan for the next few weeks:
+10/21 - complete reading in tables, begin brainstorming business questions
+10/28 - continue cleaning / tidying data, explore / finalize business questions
+11/4 - begin EDA
+11/11 - continue EDA
+Update, w/o 10/21:
+This week, we finished reading in the trnsact table. We are still considering appending those rows in the SKU table with two colors, but will first move forward with considering business questions to investigate. A few questions we might explore:
+   + Can we anticipate demand in order to optimize stocking?
+   + Are there certain products that are often sold together?
+   + Are there certain products that are unpopular / only sell when discounted?
+   + Can we find best performing stores and replicate their performance?
+   + Can we optimize inventory to better represent the proportions of what people buy?
