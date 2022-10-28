@@ -1,0 +1,16 @@
+Our plan for the next few weeks:
+10/28 - continue cleaning / tidying data, explore / finalize business questions, begin EDA
+11/4 - continue EDA
+11/11 - wrap up EDA, begin building model
+
+Update, w/o 10/28:
+Our data should now be just about ready for use. 
+We have a few small issues with the transact table (unknown columns, etc.), but that shouldn't be too hard to overcome. 
+If we don't need a column, we can just not include it in the model recipe. We will also likely have to do a decent amount of feature engineering.
+We have also decided to focus on the third business problem we brainstormed last week, the one on certain products being unpopular / only selling when discounted. 
+We think it would interesting to build a model that predicts the discount rate needed on specific products for maximizing profit, or perhaps a model that classifies products as more desirable / less desirable. 
+Does this sound like a good question or model to pursue?
+
+We have also figured out how to run SQL commands from python to get data from the server, so EDA is in process. 
+A few things we have discovered so far:
+   + mean transaction cost is 24.62, which seems a little low for an "upscale" department store
