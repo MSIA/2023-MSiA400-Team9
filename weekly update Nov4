@@ -1,0 +1,12 @@
+Our plan for the next few weeks:
+11/4 - continue EDA, begin feature engineering
+11/11 - wrap up EDA, wrap up feature engineering, begin building model
+11/18 - begin (hopefully) model assessment / selection
+
+Update, w/o 11/4:
+This week, we continued EDA in search of potentials variables / tables to used for our model. 
+At the moment, we expect to use data from the transactions table and the sku + store table. 
+We are interested in the sales of items at discount, so we have created a new binary variable that compares original price and retail price, with situations where orgprice > retail = 1. 
+There were some cases in which orgprice = 0, ~1%, which didn't make much sense, so we will do some more EDA to see if we could find a reason or solution.
+We expect to continue EDA and feature engineering into next week, and hopefully start some preliminary modeling. 
+At the moment, with our binary variable, we are considering a classification model where we aim to predict whether or not a product needs to go on discount for it to sell.
