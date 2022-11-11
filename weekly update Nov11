@@ -1,0 +1,11 @@
+Our plan for the next few weeks:
+11/11 - wrap up EDA, continue feature engineering, connect server data to ipynb
+11/18 - wrap up feature engineering, begin building models
+11/25 - begin model assessment / selection
+
+Update, w/o 11/11:
+This week, we wrapped up EDA. We will be using factors from the transactions table and the sku + store table, 
+with the target variable being the new binary variable we created (the one that compares original price and retail price, 
+with situations where orgprice > retail = 1). We have fetched the data from the server, loaded it into an ipynb, 
+and saved it as a csv (because querying from the server takes hours each time).
+More feature engineering might be necessary, dependent upon the model types we choose, as well as performance. We aim to start building preliminary classification models next week.
