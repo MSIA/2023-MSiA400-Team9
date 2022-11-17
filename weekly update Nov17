@@ -1,0 +1,15 @@
+Our plan for the next few weeks:
+11/18 - wrap up feature engineering, begin building models
+11/25 - begin model assessment / selection
+12/2 - finalize model, maybe tune, start report / presentation
+Update, w/o 11/18:
+This week, we began fitting a preliminary model. 
+We are starting with a random forest model, trained on the first 1 million rows of our data. 
+For context, our data currently contains features from the transactions table joined with original price and retail from the sku + store table. 
+Our goal is to predict if a product is discounted to sell, with the discount state being where retail is less than original price. 
+A few issues that we have encountered:
+   > We realized that the first 1 million rows of our data, while having relatively good class balance, are not a true random sample from the whole data set. 
+   We will work on randomly selecting next time.
+   > We notice that our accuracy is way too high (almost 99%), meaning that there may be overfitting and data leakage. 
+   Specifically, none of the observations in the transactions table can exist without a transaction first occurring, in which case we would already know the discount.
+Should we consider predicting something else, as in change our business question? Or, should we disregard the features from the transactions table and focus on location / product data? 
