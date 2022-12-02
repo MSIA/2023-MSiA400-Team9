@@ -1,0 +1,12 @@
+Our plan for the next few weeks:
+12/2 - wrap up modeling
+12/9 - submit project
+
+Update, w/o 12/2:
+This week, we made some pretty big changes:
+   > Our "discount" is now the mean percentage per SKU
+   > We are now using ~1.5 million rows of data from SKU, such as color, brand, department, etc. to predict the expected percentage discount for these products
+We have also done a lot of new cleaning / feature engineering:
+   > Grouping colors
+   > Creating quintiles to better identify brands / reduce length of dummy variables
+We are currently in the process of wrapping up modeling, and will begin preparing our report and presentation.
