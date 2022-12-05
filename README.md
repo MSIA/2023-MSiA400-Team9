@@ -8,6 +8,20 @@ Design and build a model that predicts the discount rate needed on specific prod
 or a model that classifies products as more desirable/ less desirable. 
 
 Weekly update:
+
+Update, w/o 12/2:
+This week, we made some pretty big changes:
+   > Our "discount" is now the mean percentage per SKU
+   > We are now using ~1.5 million rows of data from SKU, such as color, brand, department, etc. to predict the expected percentage discount for these products
+We have also done a lot of new cleaning / feature engineering:
+   > Grouping colors
+   > Creating quintiles to better identify brands / reduce length of dummy variables
+We are currently in the process of wrapping up modeling, and will begin preparing our report and presentation.
+
+Our plan for the next few weeks:
+12/2 - wrap up modeling
+12/9 - submit project
+
 Update, w/o 11/11:
 This week, we wrapped up EDA. We will be using factors from the transactions table and the sku + store table, 
 with the target variable being the new binary variable we created (the one that compares original price and retail price, 
